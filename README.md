@@ -36,6 +36,16 @@ user    0m10.087s
 sys     0m0.004s
 ```
 
+vs Golang:
+
+```
+# time go run count.go
+
+real    0m0.206s
+user    0m0.155s
+sys     0m0.070s
+```
+
 I originally had them counting to 1 billion, but my computer's fan kicked on and
 I was afraid the machine was going to explode when I ran the script in Python.
 
@@ -59,4 +69,10 @@ sys	    0m0.011s
 real    1m48.121s
 user    1m48.006s
 sys     0m0.006s
+
+# time go run count.go
+
+real    0m0.429s
+user    0m0.377s
+sys     0m0.068s
 ```
