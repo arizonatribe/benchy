@@ -46,6 +46,16 @@ user    0m0.155s
 sys     0m0.070s
 ```
 
+vs Ruby:
+
+```
+# time ruby count.rb
+
+real    0m4.516s
+user    0m4.495s
+sys     0m0.015s
+```
+
 I originally had them counting to 1 billion, but my computer's fan kicked on and
 I was afraid the machine was going to explode when I ran the script in Python.
 
@@ -75,4 +85,10 @@ sys     0m0.006s
 real    0m0.429s
 user    0m0.377s
 sys     0m0.068s
+
+# time ruby count.rb
+
+real    0m44.001s
+user    0m43.899s
+sys     0m0.065s
 ```
