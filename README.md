@@ -5,6 +5,7 @@ programming languages, frameworks, libraries/tools, and programming techniques.
 
 ## Version being tested for each language
 
+* Dotnet - 2.1.105
 * Golang - 1.8.3
 * Java - 10.0.1
 * PHP - 7.1.7
@@ -52,6 +53,12 @@ sys     0m0.015s
 real    0m0.158s
 user    0m0.150s
 sys     0m0.034s
+
+# time dotnet run
+
+real    0m2.353s
+user    0m2.113s
+sys     0m0.463s
 ```
 
 I originally had them looping 1 billion times, but my computer's fan kicked on and I feared my machine was going to explode when I ran the script in Python.
@@ -94,6 +101,12 @@ sys     0m0.065s
 real    0m0.401s
 user    0m0.392s
 sys     0m0.036s
+
+# time dotnet run
+
+real    0m4.556s
+user    0m4.234s
+sys     0m0.469s
 ```
 
 ### Summary 
