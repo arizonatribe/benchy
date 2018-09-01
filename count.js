@@ -1,5 +1,6 @@
 var sum = 0
-for (var i = 0; i < 100000000; i++) {
-    sum +=i
+var count = 100000000
+while(--count) {
+  sum +=count
 }
 console.log(sum)

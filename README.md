@@ -6,12 +6,12 @@ programming languages, frameworks, libraries/tools, and programming techniques.
 ## Version being tested for each language
 
 * Dotnet - 2.1.105
-* Golang - 1.8.3
-* Java - 10.0.1
-* PHP - 7.1.7
-* Python - 3.6.3
+* Golang - 1.9.7
+* Java - 10.0.2
+* PHP - 7.1.21
+* Python - 3.6.6
 * Node - 9.7.1
-* Ruby - 2.3.3
+* Ruby - 2.4.4
 
 ## Results
 
@@ -20,45 +20,45 @@ Using the `time` util in Linux to clock the attempts, looping 100,000,000 times:
 ```
 # time go run count.go
 
-real    0m0.206s
-user    0m0.155s
-sys     0m0.070s
+real	0m0.164s
+user	0m0.159s
+sys	  0m0.038s
 
 # time php count.php
 
-real	0m1.721s
-user	0m1.709s
-sys		0m0.010s
+real	0m1.407s
+user	0m1.399s
+sys	  0m0.007s
 
 # time python3 count.py
 
-real    0m10.101s
-user    0m10.087s
-sys     0m0.004s
+real	0m9.830s
+user	0m9.812s
+sys	  0m0.008s
 
 # time node count.js 
 
-real    0m0.151s
-user    0m0.144s
-sys     0m0.007s
+real	0m0.152s
+user	0m0.141s
+sys	  0m0.011s
 
 # time ruby count.rb
 
-real    0m4.516s
-user    0m4.495s
-sys     0m0.015s
+real	0m4.332s
+user	0m4.321s
+sys	  0m0.007s
 
-# time java count
+# time java Count
 
-real    0m0.158s
-user    0m0.150s
-sys     0m0.034s
+real	0m0.113s
+user	0m0.128s
+sys	  0m0.018s
 
 # time dotnet run
 
-real    0m2.353s
-user    0m2.113s
-sys     0m0.463s
+real	0m1.930s
+user	0m1.867s
+sys	  0m0.265s
 ```
 
 I originally had them looping 1 billion times, but my computer's fan kicked on and I feared my machine was going to explode when I ran the script in Python.
@@ -68,15 +68,15 @@ But the results when looping 1 billion times:
 ```
 # time go run count.go
 
-real    0m0.429s
-user    0m0.377s
-sys     0m0.068s
+real	0m0.432s
+user	0m0.427s
+sys	  0m0.039s
 
 # time php count.php
 
-real	0m16.677s
-user	0m16.661s
-sys	    0m0.011s
+real	0m13.916s
+user	0m13.893s
+sys	  0m0.008s
 
 # time python3 count.py
 
@@ -86,27 +86,27 @@ sys     0m0.006s
 
 # time node count.js
 
-real    0m0.951s
-user    0m0.945s
-sys     0m0.005s
+real	0m0.944s
+user	0m0.939s
+sys	  0m0.004s
 
 # time ruby count.rb
 
-real    0m44.001s
-user    0m43.899s
-sys     0m0.065s
+real	0m43.883s
+user	0m43.767s
+sys	  0m0.025s
 
 # time java count
 
-real    0m0.401s
-user    0m0.392s
-sys     0m0.036s
+real	0m0.399s
+user	0m0.412s
+sys	  0m0.021s
 
 # time dotnet run
 
-real    0m4.556s
-user    0m4.234s
-sys     0m0.469s
+real	0m4.136s
+user	0m4.078s
+sys	  0m0.261s
 ```
 
 ### Summary 
